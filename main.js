@@ -15,7 +15,6 @@ var confirm11 = false;
 var confirm12 = false;
 var confirm13 = false;
 
-
 var confirm21 = false;
 var confirm22 = false;
 var confirm23 = false;
