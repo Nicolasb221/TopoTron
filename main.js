@@ -8,8 +8,9 @@ const row3 =document.getElementById("row3");
 const row4 = document.getElementById("row4");
 const longitud = inputUser.length;
 const contenedor = document.querySelector(".grid-container");
-const contenedor2 = document.querySelector(".grid-container2");
+
 var score = 0;
+var martillo = true;
 
 var confirm11 = false;
 var confirm12 = false;
@@ -100,6 +101,7 @@ function potatochips(){
         contenedor.style.gridTemplateAreas= 0;
         contenedor.style.gridTemplateColumns = '1fr 1fr 1fr';
         contenedor.style.gridTemplateRows = '25% 25% 25% 25%';
+        
         const filas = contenedor.style.gridTemplateRows.split(" ").length;
         const columnas = contenedor.style.gridTemplateColumns.split(" ").length;
         for (let fila = 1; fila <= filas; fila++) {
@@ -144,6 +146,7 @@ function potatochips(){
         const img7 =document.getElementById("imagen-7");
         const img8 =document.getElementById("imagen-8");
         const img9 =document.getElementById("imagen-9");
+        // const mallas =document.querySelector(".grid-item2");
 
         img1.addEventListener("dblclick",coca1);
         img2.addEventListener("dblclick",coca2);
@@ -161,7 +164,7 @@ function potatochips(){
           });
         soundtrack.play();
         topacio();
-        setInterval(topacio, 2000);
+        setInterval(topacio, 3000);
     }
 }
 
