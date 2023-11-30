@@ -1,4 +1,4 @@
-const playButton = document.querySelector(".boton");
+const playButton = document.querySelector(".container__grid-boton-boton");
 const contenedor = document.querySelector(".container");
 
 const soundButton = document.getElementById("sonido");
@@ -72,17 +72,20 @@ function posicionTopoConNumeroRandom() {
 let documentFragment = document.createDocumentFragment();
 
 playButton.addEventListener("mouseover", () => {
-    soundButton.play();
+  soundButton.play();
 });
 playButton.addEventListener("mouseout", () => {
-    playButton.setTimeout(1000);
-    soundButton.pause();
-    soundButton.currentTime = 0;
+  playButton.setTimeout(1000);
+  soundButton.pause();
+  soundButton.currentTime = 0;
 });
 playButton.addEventListener("click", juego);
 function juego() {
-  document.querySelector(".container__key-data").value = document.getElementById("usuario").value;
-  const nicknameIngresado = document.querySelector(".container__key-data").value;
+  document.querySelector(".container__grid-entrada-hidden-key-data").value =
+    document.getElementById("usuario").value;
+  const nicknameIngresado = document.querySelector(
+    ".container__grid-entrada-hidden-key-data"
+  ).value;
   const nicknameLongitud = nicknameIngresado.length;
   if (nicknameLongitud >= 4 && nicknameLongitud <= 8) {
     row1.style.display = "none";
@@ -101,10 +104,16 @@ function juego() {
         i++;
         if (fila !== 4) {
           let div = document.createElement("DIV");
-          div.classList.add(`container__item-${fila}-${columna}`, "container__grid-gameplay");
+          div.classList.add(
+            `container__item-${fila}-${columna}`,
+            "container__grid-gameplay"
+          );
           let nuevaImagen = document.createElement("IMG");
           nuevaImagen.src = "hole.png";
-          nuevaImagen.classList.add(`container__grid-gameplay-img-${fila}-${columna}`,"container__grid-gameplay-holes");
+          nuevaImagen.classList.add(
+            `container__grid-gameplay-img-${fila}-${columna}`,
+            "container__grid-gameplay-holes"
+          );
           nuevaImagen.id = `imagen-${i}`;
           div.appendChild(nuevaImagen);
           documentFragment.appendChild(div);
@@ -118,7 +127,11 @@ function juego() {
             );
             div.appendChild(
               document.createTextNode(
-                `${document.querySelector(".container__key-data").value}`
+                `${
+                  document.querySelector(
+                    ".container__grid-entrada-hidden-key-data"
+                  ).value
+                }`
               )
             );
             documentFragment.appendChild(div);
