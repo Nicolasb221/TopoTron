@@ -2,7 +2,7 @@ body{
     background: radial-gradient(circle, rgba(161,105,0,0.61) 30%, rgba(255,166,0,0.48792016806722693) 100%);
     font-family: "Holtwood One SC", sans-serif;
 }
-.grid-container{
+.container{
     display: grid;
     grid-template-areas:
     "titulo" 
