@@ -22,39 +22,34 @@ body{
     cursor: url("cursorha.png") 0 0, pointer;
     
 }
-.grid-titulo{
+.container__grid-item{
     display: flex;
     justify-content: center;
+    align-items: center;
+
+}
+.container__grid-titulo{
     grid-area:titulo;
     text-align: center;
     font-size: 60px;
 }
-.grid-titulo > div{
+.container__grid-titulo > div{
     height: 100%;
     width: auto;
     color: #54343f;
     text-shadow: 0 0 20px #54343f;
 }
-.grid-imagen{
-    display: flex;
-    justify-content: center;
+.container__grid-imagen{
     grid-area:imagen;
     margin: 10px;
     padding: 20px;
 }
-.grid-entrada{
+.container__grid-entrada{
     grid-area:entrada;
     margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
-.grid-boton{
+.container__grid-boton{
     grid-area:boton;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 .logo{
     height: 100%;
@@ -102,19 +97,19 @@ body{
     background:linear-gradient(to bottom, transparent,#54343f95)  ;
     text-shadow: 0px 0px 15px #cad5ad;
 }
-.holes{
+.container__grid-gameplay-holes{
     max-height: 100%;
 }
-.grid-item2{
+.container__grid-gameplay{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.usuariogrid{
+.container__usuariogrid{
     font-size: 1.5em;
     color: #f58940;
 }
-.scoregrid{
+.container__scoregrid{
     font-size: 1.5em;
     color: #54343f;
 }
