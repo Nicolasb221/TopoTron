@@ -10,7 +10,7 @@ Una vez se ingresa el usuario clicamos el botón **jugar**.
 
 ![ingresando usuario](https://github.com/Nicolasb221/TopoTron/assets/88752910/b5542178-efc2-4a03-ba01-1e62d82e590c)
 
-Ya dentro del juego, se encuentran 9 celdas en donde los topos aparecerán de manera aleatoria cada cierto tiempo, para ganar puntos se debe dar doble clic sobre el topo, de esta manera se sumaran 10 puntos al puntaje por cada topo que logremos clicar.
+Ya dentro del juego, se encuentran 9 celdas en donde los topos aparecerán de manera aleatoria cada cierto tiempo, para ganar puntos se debe dar doble clic sobre el topo, de esta manera se suman 10 puntos por cada topo atrapado.
 
 ![ingresando](https://github.com/Nicolasb221/TopoTron/assets/88752910/a4ad03ca-95be-4db5-9b4d-e65f63b50fec)
 
